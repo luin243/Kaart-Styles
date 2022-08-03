@@ -369,13 +369,6 @@ setting::user_NeddyD {
   group: "sinopah";
 }
 
-setting::user_NiyomiK {
-  type:boolean;
-  label:tr("n1y0m1|Niyomi Khalid");
-  default:true;
-  group: "sinopah";
-}
-
 setting::user_RickZ {
   type:boolean;
   label:tr("Ouray|Rick Zortman");
@@ -441,7 +434,6 @@ setting::user_ViancaS {
 *[osm_user_name() == "127logs"][setting("user_LoganS")],
 *[osm_user_name() == "trigeo"][setting("user_MickT")],
 *[osm_user_name() == "Ned_Stark"][setting("user_NeddyD")],
-*[osm_user_name() == "n1y0m1"][setting("user_NiyomiK")],
 *[osm_user_name() == "Ouray"][setting("user_RickZ")],
 *[osm_user_name() == "whatmeinfallible"][setting("user_RikH")],
 *[osm_user_name() == "Amonite1025"][setting("user_ViancaS")]
@@ -530,8 +522,6 @@ relation[eval(JOSM_search("user:trigeo"))] > node[setting("user_MickT")],
 relation[eval(JOSM_search("user:trigeo"))] > way[setting("user_MickT")],
 relation[eval(JOSM_search("user:Ned_Stark"))] > node[setting("user_NeddyD")],
 relation[eval(JOSM_search("user:Ned_Stark"))] > way[setting("user_NeddyD")],
-relation[eval(JOSM_search("user:n1y0m1"))] > node[setting("user_NiyomiK")],
-relation[eval(JOSM_search("user:n1y0m1"))] > way[setting("user_NiyomiK")],
 relation[eval(JOSM_search("user:Ouray"))] > node[setting("user_RickZ")],
 relation[eval(JOSM_search("user:Ouray"))] > way[setting("user_RickZ")],
 relation[eval(JOSM_search("user:whatmeinfallible"))] > node[setting("user_RikH")],
